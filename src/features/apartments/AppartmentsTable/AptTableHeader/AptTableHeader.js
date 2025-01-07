@@ -2,7 +2,6 @@ import { Select } from "antd";
 import styles from "./AptTableHeader.module.scss";
 import { useAppartments } from "../../../../hooks/useAppartments";
 import { useFilters } from "../../../../contexts/FiltersContext";
-import { useState } from "react";
 function AptTableHeader() {
   const { filters } = useFilters();
   const { appartments } = useAppartments(filters);
